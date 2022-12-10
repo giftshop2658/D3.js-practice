@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>day4</title>
+    <script src = "https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
     <div class="box1">
@@ -12,6 +13,52 @@
         <p>select 2</p>
         <p>select 3</p>
         <p>select 4</p>
-      </div>
+    </div>
+
+    <div class="box2">
+        <p>selectAll 1</p>
+        <p>selectAll 2</p>
+        <p>selectAll 3</p>
+        <p>selectAll 4</p>
+    </div>
+
+    <svg class="svg1" width="500" height="100">
+        <circle></circle>
+    </svg>
+
+    <div class="append">
+        <p>a</p>
+        <p>b</p>
+        <p>c</p>
+        <p>d</p>
+    </div>
+
+    <script>
+        d3.select('.box1 p').style('color', 'red');
+        d3.selectAll('.box2 p').style('color', 'red');
+    </script>
+
+    <script>
+        d3.select('.svg1 circle')
+            .attr("r", 10)
+            .attr("fill", "blue")
+            .attr("cx", 50)
+            .attr("cy", 50);
+    </script>
+
+    <script>
+        d3.select('.svg1 circle')
+            .attr("r", 10)
+            .attr("fill", "blue")
+            .attr("cx", 50)
+            .attr("cy", 50)
+			.attr("transform", "translate(40,40)");
+    </script>
+
+    <script>
+        d3.select('.append')
+            .append('p')
+            .text('e');
+    </script>
 </body>
 </html>
