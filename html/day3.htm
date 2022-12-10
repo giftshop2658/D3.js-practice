@@ -4,9 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>day3</title>
 </head>
 <body>
+    <!-- rect矩形 -->
+    <svg width="400" height="200" style="border:1px solid red">
+        <rect x="20" y="20" width="300" height="100" 
+              style="fill:rgb(255, 0, 255); stroke-width:3; stroke:rgb(0,0,0)" />
+    </svg>
+    <br>
+
+    <!-- circle圓形 -->
+    <svg width="400" height="150" style="border:1px solid red">
+        <circle cx="100" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <br>
+
+    <!-- ellipse橢圓形 -->
+    <svg width="400" height="150" style="border:1px solid red">
+        <ellipse cx="200" cy="80" rx="80" ry="50" stroke="black" stroke-width="3" fill="pink"></ellipse>
+    </svg>
+    <br>
+
+    <!-- line線條 -->
+    <svg width="400" height="200" style="border:1px solid red">
+        <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(0,0,255); stroke-width:2" />
+    </svg>
+    <br>
+
+    <!-- polyline折線 -->
+    <svg width="400" height="200" style="border:1px solid red">
+        <polyline
+          points="20,50 40,25 60,40 80,120 120,140 160,180 "
+          style="fill: none; stroke: orangered; stroke-width: 3"
+        />
+    </svg>
+    <br>
+
+    <!-- polygon多邊形 -->
+    <svg width="400" height="200" style="border:1px solid red">
+        <polygon
+          points="200,10 250,190 160,180"
+          style="fill: lime; stroke: purple; stroke-width: 1"
+        />
+    </svg>
+    <br>
+
+    <!-- path路徑 -->
+    <svg width="400" height="200" style="border:1px solid red">
+        <path
+          d="M50 20 C80 90,40 200,250,100"
+          stroke="black"
+          fill="none"
+          stroke-width="2"
+        />
+    </svg>
+    <br>
+    <svg width="100" height="100" style="border:1px solid red">
+        <path
+          d="M25,15 L25,30
+             M75,15 L75,30
+             M15,50 C20,80 80,80 85,50"
+          stroke="black"
+          fill="none"
+          stroke-width="2"
+        />
+    </svg>
+    <br>
     
+    <!-- text文字 -->
+    <svg width="400" height="200">
+        <text x="50,60,80" y="80,120,40" fill="blue" text-anchor="start">
+          SVG 真有趣!
+        </text>
+    </svg>
 </body>
 </html>
